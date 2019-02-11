@@ -47,14 +47,9 @@ if isUserLost != True:
             print("The computer score is " + str(computerScore))
             print("The computer won!")
             isComputerPlaying = False
+
         else:
             print("The computer score is " + str(computerScore))
             print("You Have Won!")
             isComputerPlaying = False
             isComputerLost = True
-        
-
-
-
-
-
