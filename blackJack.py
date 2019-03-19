@@ -10,7 +10,7 @@ isComputerLost = False
 userScore += randint(1, 14)
 print("Your score is: " + str(userScore))
 
-choice = raw_input("If you want another card enter y, otherwise enter n:\n")
+choice = input("If you want another card enter y, otherwise enter n:\n")
 if choice == "n":
     isUserPlaying = False
 
@@ -24,7 +24,7 @@ while (userScore < 22 and isUserPlaying):
 
     else:
         print("Your score is: " + str(userScore))
-        choice = raw_input(
+        choice = input(
             "If you want another card enter y, otherwise enter n:\n")
         if choice == "n":
             isUserPlaying = False
@@ -42,7 +42,7 @@ if isUserLost != True:
 
         computerScore += randint(1, 14)
 
-        if computerScore < 21 and computerScore < userScore:
+        if computerScore < 21 and computerScore <= userScore:
             print("The computer score is: " + str(computerScore))
 
         elif computerScore < 21 and computerScore > userScore:
